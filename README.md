@@ -29,5 +29,5 @@ Add path to the save file as the program argument.
 
 ### Acknowledgement
 
-- All classes and methods marked with `@given` was supplied by the course staff.
+- All classes and methods marked with `@given` were supplied by the course staff.
 - The majority of the JavaDoc was also supplied by the course staff.
