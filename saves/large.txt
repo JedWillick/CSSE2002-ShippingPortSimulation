@@ -1,0 +1,53 @@
+Port of Brisbane
+78
+19
+BulkCargo:1:China:GRAIN:100
+BulkCargo:2:China:MINERALS:100
+BulkCargo:3:China:COAL:100
+BulkCargo:4:China:OIL:100
+BulkCargo:5:China:OTHER:100
+BulkCargo:6:China:OTHER:100
+BulkCargo:7:China:OTHER:100
+Container:8:New Zealand:STANDARD
+Container:9:New Zealand:OPEN_TOP
+Container:10:New Zealand:STANDARD
+Container:11:New Zealand:STANDARD
+Container:12:New Zealand:TANKER
+Container:13:New Zealand:STANDARD
+Container:14:New Zealand:STANDARD
+Container:15:New Zealand:STANDARD
+Container:16:New Zealand:STANDARD
+Container:17:New Zealand:STANDARD
+Container:18:New Zealand:STANDARD
+Container:19:New Zealand:STANDARD
+9
+ContainerShip:1000008:Fun:New Zealand:NOVEMBER:100:2:13,14
+ContainerShip:1000007:Holiday:New Zealand:NOVEMBER:100:2:11,12
+ContainerShip:1000006:Starship:New Zealand:NOVEMBER:100:0:
+ContainerShip:1000005:Waves:New Zealand:BRAVO:100:3:8,9,10
+BulkCarrier:1000004:Alive:China:NOVEMBER:100:5
+BulkCarrier:1000003:Together:China:NOVEMBER:100:4
+BulkCarrier:1000002:Voyager:China:NOVEMBER:100:3
+BulkCarrier:1000001:Freedom:China:NOVEMBER:100:2
+BulkCarrier:1000000:Odyssey:China:BRAVO:100:1
+8
+BulkQuay:1:1000001:100
+BulkQuay:2:1000002:100
+BulkQuay:3:None:100
+ContainerQuay:4:1000005:100
+ContainerQuay:5:1000006:100
+ContainerQuay:6:None:100
+ContainerQuay:7:None:100
+ContainerQuay:8:None:100
+ShipQueue:3:1000000,1000003,1000004
+StoredCargo:4:6,7,15,16
+Movements:8
+ShipMovement:81:INBOUND:1000008
+CargoMovement:83:OUTBOUND:2:15,16
+CargoMovement:83:INBOUND:2:1,2
+ShipMovement:84:INBOUND:1000007
+ShipMovement:92:OUTBOUND:1000000
+ShipMovement:95:OUTBOUND:1000001
+ShipMovement:100:INBOUND:1000000
+ShipMovement:90:INBOUND:1000006
+Evaluators:4:QuayOccupancyEvaluator,ShipFlagEvaluator,ShipThroughputEvaluator,CargoDecompositionEvaluator
