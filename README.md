@@ -8,13 +8,10 @@ Assignments 1 and 2 combined for UQ's [CSSE2002 Programming in the Large](https:
 
 ### Usage
 
-Run [portsim.Launcher](src/portsim/Launcher.java) with the file containing the port and the following:
-
-VM options:
+Run [portsim.Launcher](src/portsim/Launcher.java) with VM options and the port file.
 
 ```
---module-path path/to/javafx/lib
---add-modules javafx.controls
+--module-path path/to/javafx/lib --add-modules javafx.controls 'saves/large.txt'
 ```
 
 
