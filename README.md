@@ -1,6 +1,6 @@
 ## CSSE2002 Shipping Port Simulation
 
-Assignments 1 and 2 combined for UQ's Semester 2, 2021 [CSSE2002 Programming in the Large](https://my.uq.edu.au/programs-courses/course.html?course_code=CSSE2002) 
+Assignments 1 and 2 combined for [CSSE2002 Programming in the Large](https://my.uq.edu.au/programs-courses/course.html?course_code=CSSE2002) @ UQ Semester 2, 2021
 
 ![portsim](portsim.PNG)
 
