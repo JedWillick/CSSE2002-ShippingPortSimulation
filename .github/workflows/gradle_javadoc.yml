@@ -16,9 +16,12 @@ jobs:
           
       - name: Generate Javadoc
         run: ./gradlew javadoc
-        
-      - name: Deploy Javadoc
-        uses: JamesIves/github-pages-deploy-action@v4.2.2
-        with:
-          branch: gh-pages
-          folder: build/docs/javadoc
+      
+      - name: test
+        run: ls
+     
+#       - name: Deploy Javadoc
+#         uses: JamesIves/github-pages-deploy-action@v4.2.2
+#         with:
+#           branch: gh-pages
+#           folder: build/docs/javadoc
