@@ -2,7 +2,8 @@ name: Deploy Javadoc
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   publish:
@@ -12,11 +13,11 @@ jobs:
       - uses: actions/setup-java@v2
         with:
           java-version: 11
-          distribution: 'temurin'
-          
+          distribution: "temurin"
+
       - name: Generate Javadoc
         run: ./gradlew javadoc
-     
+
       - name: Deploy Javadoc
         uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
