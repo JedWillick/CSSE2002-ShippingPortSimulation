@@ -19,6 +19,12 @@ javadoc {
     options.tags = [ "ensure", "require", "given" ] 
 }
 
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(11))
+    }
+}
+
 dependencies {
     // Use JUnit test framework.
     testImplementation 'junit:junit:4.13.2'
