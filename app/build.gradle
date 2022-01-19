@@ -1,7 +1,8 @@
 plugins {
-    // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
-    id 'org.javamodularity.moduleplugin' version '1.8.10' // javafx tries to use a older broken version
+
+    // javafx tries to use an older broken version of this :/
+    id 'org.javamodularity.moduleplugin' version '1.8.10'
     id 'org.openjfx.javafxplugin' version '0.0.11'
 }
 
@@ -12,11 +13,13 @@ repositories {
 
 javafx {
     version = "11.0.2"
-    modules = [ 'javafx.controls' ]
+    modules = ['javafx.controls']
 }
 
 javadoc {
-    options.tags = [ "ensure", "require", "given" ] 
+    options.tags = ['ensure', 'require', 'given']
+    options.links = ['https://docs.oracle.com/en/java/javase/11/docs/api/',
+                     'https://openjfx.io/javadoc/11/']
 }
 
 java {
