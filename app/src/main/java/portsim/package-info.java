@@ -1,7 +1,7 @@
 /**
  * <b>Shipping Port Simulation</b>
  * <br>
- * Assignment 1 & 2 (combined) for CSSE2002, Semester 2 2021
+ * Assignment 1 &amp; 2 (combined) for CSSE2002, Semester 2 2021
  * <br><br>
  * <b>Acknowledgment</b>:
  * <ul>

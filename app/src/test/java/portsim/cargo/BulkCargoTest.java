@@ -1,6 +1,5 @@
 package portsim.cargo;
 
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import portsim.ship.Ship;
