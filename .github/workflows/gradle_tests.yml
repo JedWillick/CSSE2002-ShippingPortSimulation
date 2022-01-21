@@ -5,10 +5,16 @@ on:
     branches-ignore:
       - submission
       - gh-pages
+    paths:
+      - "src/**"
+      - "**.gradle"
   pull_request:
     branches-ignore:
       - submission
       - gh-pages
+    paths:
+      - "src/**"
+      - "**.gradle"
 
 jobs:
   build:
