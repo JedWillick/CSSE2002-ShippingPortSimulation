@@ -1,7 +1,9 @@
 /**
  * <b>Shipping Port Simulation</b>
  * <br>
- * Assignment 1 &amp; 2 (combined) for CSSE2002, Semester 2 2021
+ * Assignment 1 &amp; 2 (combined) for
+ * <a href="https://my.uq.edu.au/programs-courses/course.html?course_code=CSSE2002">CSSE2002</a>,
+ * Semester 2 2021
  * <br><br>
  * <b>Acknowledgment</b>:
  * <ul>
@@ -16,7 +18,15 @@
  *
  * @author Jed Willick
  */
-open module portsim.app.main {
+module portsim.main {
     requires transitive javafx.graphics;
     requires javafx.controls;
+    exports portsim;
+    exports portsim.cargo;
+    exports portsim.display;
+    exports portsim.evaluators;
+    exports portsim.movement;
+    exports portsim.port;
+    exports portsim.ship;
+    exports portsim.util;
 }
