@@ -21,6 +21,7 @@
 module portsim.main {
     requires transitive javafx.graphics;
     requires javafx.controls;
+
     exports portsim;
     exports portsim.cargo;
     exports portsim.display;
