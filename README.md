@@ -9,7 +9,7 @@ Assignments 1 and 2 combined for [CSSE2002 Programming in the Large](https://my.
 ```bash
 git clone https://github.com/JedWillick/CSSE2002-ShippingPortSimulation.git portsim
 cd portsim
-gradlew run --args='saves/large.txt'
+./gradlew run --args='saves/large.txt'
 ```
 
 ## Dependencies
