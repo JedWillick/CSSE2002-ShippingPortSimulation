@@ -1,4 +1,4 @@
-module:portsim.app.main
+module:portsim.main
 portsim
 portsim.cargo
 portsim.display

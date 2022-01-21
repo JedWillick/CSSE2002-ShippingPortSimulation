@@ -1,1 +1,1 @@
-moduleSearchIndex = [{"l":"portsim.app.main"}]
+moduleSearchIndex = [{"l":"portsim.main"}]
