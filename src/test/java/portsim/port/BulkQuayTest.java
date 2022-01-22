@@ -1,5 +1,6 @@
 package portsim.port;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import portsim.cargo.Cargo;
@@ -18,15 +19,18 @@ public class BulkQuayTest {
 
     @Before
     public void setUp() throws Exception {
-        Ship.resetShipRegistry();
-        Cargo.resetCargoRegistry();
-
         minBulkQuay = new BulkQuay(0, 0);
         maxBulkQuay = new BulkQuay(Integer.MAX_VALUE, Integer.MAX_VALUE);
         normalBulkQuay1 = new BulkQuay(420, 500);
 
         bulkCarrier = new BulkCarrier(4204201, "Enterprise", "USA",
                 NauticalFlag.WHISKEY, 100);
+    }
+
+    @After
+    public void tearDown() throws Exception {
+        Ship.resetShipRegistry();
+        Cargo.resetCargoRegistry();
     }
 
     /**

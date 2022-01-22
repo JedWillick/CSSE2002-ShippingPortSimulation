@@ -1,5 +1,6 @@
 package portsim.cargo;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import portsim.ship.Ship;
@@ -13,12 +14,15 @@ public class BulkCargoTest {
 
     @Before
     public void setUp() throws Exception {
-        Ship.resetShipRegistry();
-        Cargo.resetCargoRegistry();
-
         minBulkCargo = new BulkCargo(0, "", 0, BulkCargoType.GRAIN);
         maxBulkCargo = new BulkCargo(Integer.MAX_VALUE, "The United Kingdom of Great Britain and Northern Ireland", Integer.MAX_VALUE, BulkCargoType.MINERALS);
         normalBulkCargo = new BulkCargo(21, "Brazil", 420, BulkCargoType.COAL);
+    }
+
+    @After
+    public void tearDown() throws Exception {
+        Ship.resetShipRegistry();
+        Cargo.resetCargoRegistry();
     }
 
     /**

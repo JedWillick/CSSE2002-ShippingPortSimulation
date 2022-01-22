@@ -1,5 +1,6 @@
 package portsim.ship;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import portsim.cargo.*;
@@ -22,9 +23,6 @@ public class BulkCarrierTest {
 
     @Before
     public void setUp() throws Exception {
-        Ship.resetShipRegistry();
-        Cargo.resetCargoRegistry();
-
         minBulkCarrier = new BulkCarrier(1000000, "", "", NauticalFlag.HOTEL, 0);
         minBulkCargo = new BulkCargo(0, "", 0, BulkCargoType.OIL);
 
@@ -40,7 +38,12 @@ public class BulkCarrierTest {
 
         normalBulkCarrier2 = new BulkCarrier(7654321, "Joe's Sheepy Ship", "New Zealand", NauticalFlag.NOVEMBER, 500);
         normalBulkCargo2 = new BulkCargo(21, "New Zealand", 222, BulkCargoType.OTHER);
+    }
 
+    @After
+    public void tearDown() throws Exception {
+        Ship.resetShipRegistry();
+        Cargo.resetCargoRegistry();
     }
 
     /**

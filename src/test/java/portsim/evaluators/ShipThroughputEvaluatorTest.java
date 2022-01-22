@@ -1,5 +1,6 @@
 package portsim.evaluators;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import portsim.cargo.*;
@@ -34,9 +35,6 @@ public class ShipThroughputEvaluatorTest {
 
     @Before
     public void setUp() throws Exception {
-        Ship.resetShipRegistry();
-        Cargo.resetCargoRegistry();
-
         containerShip1 = new ContainerShip(1234567, "containerShip1", "AU", NauticalFlag.BRAVO, 100);
         containerShip2 = new ContainerShip(1234568, "containerShip2", "AU", NauticalFlag.BRAVO, 100);
         bulkCarrier1 = new BulkCarrier(1234569, "bulkCarrier1", "AU", NauticalFlag.BRAVO, 100);
@@ -63,6 +61,12 @@ public class ShipThroughputEvaluatorTest {
         } catch (Exception ignore) {
 
         }
+    }
+
+    @After
+    public void tearDown() throws Exception {
+        Ship.resetShipRegistry();
+        Cargo.resetCargoRegistry();
     }
 
     @Test

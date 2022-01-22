@@ -1,7 +1,9 @@
 package portsim.port;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import portsim.cargo.Cargo;
 import portsim.ship.BulkCarrier;
 import portsim.ship.ContainerShip;
 import portsim.ship.NauticalFlag;
@@ -44,7 +46,6 @@ public class ShipQueueTest {
 
     @Before
     public void setUp() throws Exception {
-        Ship.resetShipRegistry();
         ships = new ArrayList<>();
 
         // Dangerous Ships - Bravo Flag
@@ -98,6 +99,12 @@ public class ShipQueueTest {
         } catch (Exception ignore) {
 
         }
+    }
+
+    @After
+    public void tearDown() throws Exception {
+        Ship.resetShipRegistry();
+        Cargo.resetCargoRegistry();
     }
 
     @Test
