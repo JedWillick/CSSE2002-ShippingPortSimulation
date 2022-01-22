@@ -8,6 +8,7 @@ on:
     paths:
       - "src/**"
       - "**.gradle"
+
   pull_request:
     branches-ignore:
       - submission

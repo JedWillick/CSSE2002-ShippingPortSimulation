@@ -2,6 +2,12 @@
 
 These tests were graded against faulty solutions.
 
+## Usage
+
+```shell
+./gradlew test
+```
+
 ## Assignment 1 Tests
 
 - [BulkCargoTest](java/portsim/cargo/BulkCargoTest.java)
@@ -12,9 +18,3 @@ These tests were graded against faulty solutions.
 
 - [ShipThroughputEvaluatorTest](java/portsim/evaluators/ShipThroughputEvaluatorTest.java)
 - [ShipQueueTest](java/portsim/port/ShipQueueTest.java)
-
-## Usage
-
-```shell
-./gradlew test
-```
