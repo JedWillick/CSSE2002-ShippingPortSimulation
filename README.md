@@ -1,5 +1,10 @@
 # CSSE2002 Shipping Port Simulation
 
+<!-- badges: start -->
+[![Build](https://github.com/jedwillick/portsim/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/jedwillick/portsim/actions/workflows/build.yml)
+[![Generic badge](https://img.shields.io/badge/View-Docs-success.svg)](https://jedwillick.github.io/portsim/)
+<!-- badges: end -->
+
 Assignments 1 and 2 combined for [CSSE2002 Programming in the Large](https://my.uq.edu.au/programs-courses/course.html?course_code=CSSE2002) @ UQ Semester 2, 2021
 
 ![portsim](images/portsim.PNG)
