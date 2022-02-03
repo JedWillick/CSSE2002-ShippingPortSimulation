@@ -9,9 +9,9 @@ on:
 
 jobs:
   gradle:
-    runs-on: ${{ matrix.config.os }}
+    runs-on: ${{ matrix.os }}
 
-    name: ${{ matrix.config.os }} (11)
+    name: ${{ matrix.os }} (11)
 
     strategy:
       fail-fast: false
